@@ -482,16 +482,13 @@ footer .names {
     transition: transform 0.5s ease;
 }
 
-.groom-avatar {
-    transform: translateX(20px);
-}
-
+.groom-avatar,
 .bride-avatar {
-    transform: translateX(-20px);
+    transform: none;
 }
 
 .avatars-container:hover .entry-avatar {
-    transform: translateX(0) scale(1.05);
+    transform: scale(1.05);
 }
 
 .typing-container {
@@ -651,23 +648,270 @@ html.lenis {
     transform: scale(1.02);
 }
 
+/* Islamic Wedding Elements */
+.bismillah-hero {
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    direction: rtl;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.islamic-motif {
+    font-family: 'Amiri', serif;
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.arabic-verse {
+    font-family: 'Amiri', serif;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: var(--primary-color);
+    margin: 0 auto 1.5rem;
+    direction: rtl;
+    font-weight: 700;
+    text-align: center;
+    max-width: 800px;
+    overflow-wrap: break-word;
+    word-break: normal;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.quote-reference {
+    font-size: 0.95rem;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+    font-weight: 500;
+}
+
+/* Entry Screen Avatars */
+.entry-avatar-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-union-icon {
+    font-size: 1.4rem;
+    animation: gentle-float 3s ease-in-out infinite alternate;
+}
+
+/* Couple Avatar Profiles Section */
+.couple-profiles-section {
+    background-color: var(--light-bg);
+}
+
+.couple-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.couple-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    width: 280px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.couple-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.18);
+}
+
+.couple-avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #d4af37, #fceda8, #d4af37);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.couple-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.couple-card:hover .couple-avatar-img {
+    transform: scale(1.04);
+}
+
+.role-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8b7320;
+    background: rgba(212, 175, 55, 0.12);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.person-name {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+}
+
+.couple-knot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.knot-ring {
+    font-size: 2.2rem;
+    animation: gentle-float 4s ease-in-out infinite alternate;
+}
+
+.knot-text {
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--accent-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Detail Card Rows */
+.detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0.4rem;
+}
+
+.detail-row .date,
+.detail-row .time {
+    margin-bottom: 0 !important;
+}
+
+.detail-icon {
+    font-size: 1.1rem;
+}
+
+.venue-box {
+    background: #faf8f5;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 1.8rem auto 2.2rem;
+    max-width: 400px;
+}
+
+.venue-label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.venue-box .venue {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+.map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer Avatar Duo */
+.footer-avatar-duo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+
+.footer-mini-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-duo-symbol {
+    font-size: 1.3rem;
+}
+
+.footer-subtext {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 2px;
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {
-        padding: 4rem 1.5rem;
+        padding: 3.5rem 1.2rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .hero .title {
-        font-size: 1.8rem;
-        /* Scaled down even more for mobile to support nowrap single-line names */
+        font-size: 2.2rem;
     }
 
     .hero .ampersand {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .hero .subtitle {
         font-size: 0.75rem;
+    }
+
+    .bismillah-hero {
+        font-size: 1.15rem;
+        letter-spacing: 0;
+        padding: 0 10px;
+    }
+
+    .arabic-verse {
+        font-size: 1.05rem;
+        line-height: 1.85;
+        padding: 0 5px;
+        word-break: normal;
+        overflow-wrap: break-word;
     }
 
     .section-title {
@@ -675,7 +919,26 @@ html.lenis {
     }
 
     .quote {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
+        padding: 0 5px;
+    }
+
+    .quote-section {
+        overflow-x: hidden;
+    }
+
+    .couple-grid {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .couple-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .couple-knot {
+        margin: 0.5rem 0;
     }
 
     .countdown {
@@ -697,9 +960,5 @@ html.lenis {
 
     .details-card h3 {
         font-size: 2rem;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
     }
 }
