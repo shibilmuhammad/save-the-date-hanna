@@ -880,6 +880,69 @@ html.lenis {
     text-transform: uppercase;
 }
 
+/* Invitegram Branding Badge */
+.invitegram-badge {
+    margin-top: 2rem;
+    padding: 0.32rem 0.85rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.68rem;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.55);
+    transition: all 0.3s ease;
+}
+
+.invitegram-badge:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(212, 175, 55, 0.4);
+    color: rgba(255, 255, 255, 0.85);
+    transform: translateY(-1px);
+}
+
+.invitegram-badge .brand-highlight {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.invitegram-badge .badge-dot {
+    color: rgba(212, 175, 55, 0.6);
+    font-size: 0.65rem;
+    line-height: 1;
+}
+
+.invitegram-badge .brand-link {
+    color: rgba(212, 175, 55, 0.85);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.66rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.invitegram-badge .brand-link:hover {
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .invitegram-badge {
+        flex-direction: row;
+        gap: 6px;
+        padding: 0.28rem 0.7rem;
+        font-size: 0.63rem;
+    }
+    .invitegram-badge .brand-link {
+        font-size: 0.62rem;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {
